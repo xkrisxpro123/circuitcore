@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("images(7).jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px);
+  z-index: -1; 
+}
+
+.container {
+  position: relative;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1; 
+  width: 400px;
+  height: 300px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fad02c;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #fad02c;
+  color: #333;
+  border: 2px solid #333;
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #e6b800;
+  color: #fff;
+  border-color: #e6b800;
+}
